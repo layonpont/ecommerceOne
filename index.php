@@ -1,45 +1,11 @@
-<!DOCTYPE html>
-
-<html>
-    <head>
-        <title>Sulton's Boutique</title>
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/main.css">
-        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <script src="js/bootstrap.min.js"></script>
-    </head>
-    <body>
-        <!-- Top Nav Bar -->
-        <nav class="navbar navbar-default navbar-fixed-top">
-            <div class="container">
-                <a href="index.php" class="navbar-brand">Shaunta's' Boutique</a>
-                <ul class="nav navbar-nav">
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Men<span class="caret"></span></a>
-                        <ul class="dropdown-menu" role="menu">
-                            <li><a href="#">Shirts</a></li>
-                            <li><a href="#">Pants</a></li>
-                            <li><a href="#">Shoes</a></li>
-                            <li><a href="#">Accessories</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-
-        <!-- Header -->
-        <div id="headerWrapper">
-            <div id="back-flower"></div>
-            <div id="logotext"></div>
-            <div id="for-flower"></div>
-        </div>
-
-        <div class="container-fluid">
-            <!-- Left Side Bar -->
-            <div class="col-md-2">Left Side Bar</div>
-
-            <!-- Main Bar -->
+<?php
+    include 'includes/head.php';
+    include 'includes/navigation.php';
+    include 'includes/headerfull.php';
+    include 'includes/leftbar.php';
+?>
+           
+            <!-- Main Content -->
             <div class="col-md-8">
                 <div class="row">
                     <h2 class="text-center">Featured Products</h2>
@@ -118,71 +84,10 @@
                 </div>
             </div>
 
-            <!-- Right Side Bar -->
-            <div class="col-md-2">Right Side Bar</div>
-        </div>
+<?php
+    include 'includes/detailsmodal.php';
+    include 'includes/rightbar.php';
+    include 'includes/footer.php';
 
-        <footer class="text-center" id="footer">
-            &copy; Copywright 2017 Shaunta's Boutique
-        </footer>
-
-        <!-- Details Modal -->
-        <div class="modal fade details-1" id="details-1" tabindex="-1" role="dialog" aria-labelledby="details-1" aria-hidden="true">
-            <div class="modal-dialog modal-lg">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                        <h4 class="modal-title text-center">Levis Jeans</h4>
-                    </div>
-                    <div class="modal-body">
-                        <div class="container-fluid">
-                            <div class="row">
-                                <div class="col-sm-6">
-                                    <div class="center-block">
-                                        <img src="images/products/men4.png" alt="Levi Jeans" class="details img-responsive">
-                                    </div>
-                                </div>
-                                <div class="col-sm-6">
-                                    <h4>Details</h4>
-                                    <p>These Jeans are amazing! The are straight leg, fit great, and look sexy. Get a pair today!</p>
-                                    <hr>
-                                    <p>Price: $34.99</p>
-                                    <p>Brand: Levis</p>
-                                    <form action='add_cart.php' method='POST'>
-                                        <div class='form-group'>
-                                            <div class='col-xs-3'>
-                                                <label for="quantity">Quantity:</label>
-                                                <input type='text' class='form-class' id='quantity' name='quantity'>
-                                                
-                                            </div>
-                                            <div class="col-xs-9"></div><br>
-                                            <p>Available: 3</p>
-                                        </div>
-                                        <div class='form-group'>
-                                            <label for="size">Size:</label>
-                                            <select name='size' id='size' class='form-control'>
-                                                <option value=''></option>
-                                                <option value='28'>28</option>
-                                                <option value='32'>32</option>
-                                                <option value='36'>36</option>
-                                            </select>
-                                        </div>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="modal-footer">
-                        <button class="btn btn-default" data-dismiss="modal">Close</button>
-                        <button class="btn btn-warning" type="submit"><span class="glyphicon glyphicon-shopping-cart"></span>Add To Cart</button>
-                    </div>
-                </div>
-            </div>
-        </div>
+ ?>
         
-            
-        <script src="js/main.js"></script>
-    </body>
-</html>
