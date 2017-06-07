@@ -34,6 +34,127 @@
             <div id="logotext"></div>
             <div id="for-flower"></div>
         </div>
+
+        <div class="container-fluid">
+            <!-- Left Side Bar -->
+            <div class="col-md-2">Left Side Bar</div>
+
+            <!-- Main Bar -->
+            <div class="col-md-8">
+                <div class="row">
+                    <h2 class="text-center">Featured Products</h2>
+                    
+                    <div class="col-md-3">
+                        <h4>Levis Jeans</h4>
+                        <img src="images/products/men4.png" alt="Levis Jeans" class="img-thumb" />
+                        <p class="list-price text-danger">List Price <s>$54.99</s></p>
+                        <p class="price">Our Price: $34.99</p>
+                        <button type="button" class="btn btn-sm btn-success" data-toggle="modal" data-target="#details-1">Details</button>
+
+                    </div>
+
+                    <div class="col-md-3">
+                        <h4>Hollister Shirt</h4>
+                        <img src="images/products/men1.png" alt="Hollister Shirt" class="img-thumb" />
+                        <p class="list-price text-danger">List Price <s>$25.00</s></p>
+                        <p class="price">Our Price: $19.99</p>
+                        <button type="button" class="btn btn-sm btn-success" data-toggle="modal" data-target="#details-1">Details</button>
+
+                    </div>
+
+                    <div class="col-md-3">
+                        <h4>Fancy Shoes</h4>
+                        <img src="images/products/women6.png" alt="Fancy Shoes" class="img-thumb" />
+                        <p class="list-price text-danger">List Price <s>$69.99</s></p>
+                        <p class="price">Our Price: $49.99</p>
+                        <button type="button" class="btn btn-sm btn-success" data-toggle="modal" data-target="#details-1">Details</button>
+
+                    </div>
+
+                    <div class="col-md-3">
+                        <h4>Boys Hoodie</h4>
+                        <img src="images/products/boys1.png" alt="Boys Hoodie" class="img-thumb" />
+                        <p class="list-price text-danger">List Price <s>$24.99</s></p>
+                        <p class="price">Our Price: $18.99</p>
+                        <button type="button" class="btn btn-sm btn-success" data-toggle="modal" data-target="#details-1">Details</button>
+
+                    </div>
+
+                    <div class="col-md-3">
+                        <h4>Girls Dress</h4>
+                        <img src="images/products/girls3.png" alt="Girls Dress" class="img-thumb" />
+                        <p class="list-price text-danger">List Price <s>$34.99</s></p>
+                        <p class="price">Our Price: $24.99</p>
+                        <button type="button" class="btn btn-sm btn-success" data-toggle="modal" data-target="#details-1">Details</button>
+
+                    </div>
+
+                    <div class="col-md-3">
+                        <h4>Women's Shirt</h4>
+                        <img src="images/products/women7.png" alt="Women Shirt" class="img-thumb" />
+                        <p class="list-price text-danger">List Price <s>$45.99</s></p>
+                        <p class="price">Our Price: $25.99</p>
+                        <button type="button" class="btn btn-sm btn-success" data-toggle="modal" data-target="#details-1">Details</button>
+
+                    </div>
+
+                    <div class="col-md-3">
+                        <h4>Womens' Skirt</h4>
+                        <img src="images/products/women3.png" alt="Levis Jeans" class="img-thumb" />
+                        <p class="list-price text-danger">List Price <s>$45.99</s></p>
+                        <p class="price">Our Price: $25.99</p>
+                        <button type="button" class="btn btn-sm btn-success" data-toggle="modal" data-target="#details-1">Details</button>
+
+                    </div>
+
+                    <div class="col-md-3">
+                        <h4>Purse</h4>
+                        <img src="images/products/women5.png" alt="Purse" class="img-thumb" />
+                        <p class="list-price text-danger">List Price <s>$49.99</s></p>
+                        <p class="price">Our Price: $39.99</p>
+                        <button type="button" class="btn btn-sm btn-success" data-toggle="modal" data-target="#details-1">Details</button>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Side Bar -->
+            <div class="col-md-2">Right Side Bar</div>
+        </div>
+
+        <footer class="text-center" id="footer">
+            &copy; Copywright 2017 Shaunta's Boutique
+        </footer>
+
+        <!-- Details Modal -->
+        <div class="modal fade details-1" id="details-1" tabindex="-1" role="dialog" aria-labelledby="details-1" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-header">
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h4 class="modal-title text-center">Levis Jeans</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="center-block">
+                                    <img src="images/products/men4.png" alt="Levi Jeans" class="details img-responsive">
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <h4>Details</h4>
+                                <p>These Jeans are amazing! The are straight leg, fit great, and look sexy. Get a pair today!</p>
+                                <hr>
+                                <p>Price: $34.99</p>
+                                <p>Brand: Levis</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         
             
         <script src="js/main.js"></script>
