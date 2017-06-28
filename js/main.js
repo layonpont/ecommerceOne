@@ -13,4 +13,9 @@ jQuery(window).scroll(function(){
     $('#for-flower').css({
         "transform" : "translate(0px, -"+vscroll/2+"px)"
     });
+
+    
 });
+
+
+
